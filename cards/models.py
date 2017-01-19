@@ -13,6 +13,8 @@ def card_image_filename(instance, filename):
 
 @python_2_unicode_compatible
 class Card(models.Model):
+    title = models.CharField(max_length=140, unique=True)
+    is_title_visible = models.BooleanField(default=True)
     text = models.TextField()
     secondary_text = models.TextField(null=True, blank=True)
     image = models.ImageField(upload_to=card_image_filename, null=True, blank=True)
@@ -23,4 +25,4 @@ class Card(models.Model):
     updated_by = models.ForeignKey(User, null=True, blank=True, related_name='%(class)s_updated_by')
 
     def __str__(self):
-        return str(self.pk)
+        return self.title
