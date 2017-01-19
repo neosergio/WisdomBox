@@ -93,3 +93,6 @@ ENV/
 
 # Local storage
 *.sqlite3
+
+# Static folder
+media/
