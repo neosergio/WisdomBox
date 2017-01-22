@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -121,5 +122,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Media files
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# Rest Framework configuration
+
+REST_FRAMEWORK = {}

@@ -17,8 +17,10 @@ from django.conf import settings
 from django.conf.urls import url
 from django.conf.urls.static import static
 from django.contrib import admin
+from cards.views import CardList
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^cards/$', CardList.as_view()),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
