@@ -22,5 +22,5 @@ from cards.views import CardList
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^cards/$', CardList.as_view()),
+    url(r'^api/cards/$', CardList.as_view()),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
