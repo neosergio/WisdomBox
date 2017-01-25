@@ -17,6 +17,7 @@ class Card(models.Model):
     is_title_visible = models.BooleanField(default=True)
     text = models.TextField()
     secondary_text = models.TextField(null=True, blank=True)
+    author = models.CharField(max_length=100, null=True, blank=True)
     image = models.ImageField(upload_to=card_image_filename, null=True, blank=True)
     creation_datetime = models.DateTimeField(auto_now_add=True)
     update_datetime = models.DateTimeField(auto_now=True)
