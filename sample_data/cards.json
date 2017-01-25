@@ -1,0 +1,49 @@
+[{
+	"model": "cards.card",
+	"pk": 1,
+	"fields": {
+		"title": "three rings",
+		"is_title_visible": false,
+		"text": "\u201cThree rings for the Elven kings under the sky, seven for the Dwarf lords in their halls of stone, nine for the mortal men doomed to die, one for the Dark Lord on his dark throne, in the land of Mordor where the shadows lie. One ring to rule them all, one ring to find them, one ring the bring them all, and in the darkness bind them. In the land of Mordor where the shadows lie.\u201d",
+		"secondary_text": "",
+		"author": "LOTR",
+		"image": "",
+		"creation_datetime": "2017-01-25T14:28:42.362Z",
+		"update_datetime": "2017-01-25T14:28:42.362Z",
+		"is_active": true,
+		"created_by": null,
+		"updated_by": null
+	}
+}, {
+	"model": "cards.card",
+	"pk": 2,
+	"fields": {
+		"title": "great power responsibility",
+		"is_title_visible": true,
+		"text": "\u201cWith great power there must also come \u2014 great responsibility.\u201d",
+		"secondary_text": "Amazing Fantasy #15 (August 1962)",
+		"author": "",
+		"image": "",
+		"creation_datetime": "2017-01-25T14:31:17.721Z",
+		"update_datetime": "2017-01-25T14:31:17.721Z",
+		"is_active": true,
+		"created_by": null,
+		"updated_by": null
+	}
+}, {
+	"model": "cards.card",
+	"pk": 3,
+	"fields": {
+		"title": "Be nice to nerds",
+		"is_title_visible": true,
+		"text": "Be nice to nerds. Chances are you'll end up working for one.",
+		"secondary_text": "",
+		"author": "Bill Gates",
+		"image": "",
+		"creation_datetime": "2017-01-25T14:48:07.655Z",
+		"update_datetime": "2017-01-25T14:48:07.655Z",
+		"is_active": true,
+		"created_by": null,
+		"updated_by": null
+	}
+}]
