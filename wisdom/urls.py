@@ -23,5 +23,5 @@ from cards.views import CardList, CardDetail
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/cards/$', CardList.as_view()),
-    url(r'^api/cards/(?P<card_id>\d+)/$', CardDetail.as_view()),
+    url(r'^api/cards/(?P<pk>\d+)/$', CardDetail.as_view()),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
