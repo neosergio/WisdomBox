@@ -8,4 +8,4 @@ install:
 script:
   - python manage.py test
 env:
-  - DJANGO_SETTINGS_MODULE=AllStars.settings.local
+  - DJANGO_SETTINGS_MODULE=wisdom.settings.local
