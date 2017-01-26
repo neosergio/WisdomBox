@@ -11,4 +11,3 @@ script:
   - coverage run manage.py test
 env:
   - DJANGO_SETTINGS_MODULE=wisdom.settings.local
-after_success: coveralls
