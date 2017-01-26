@@ -6,9 +6,22 @@ DJANGO_SETTINGS_MODULE=wisdom.settings.production
 
 import dj_database_url
 from .base import *  # noqa: F403
+from os import environ
+
+
+# Function to get environment variables value if they exist.
+def env(e, d):
+    if e in environ:
+        return environ[e]
+    else:
+        return d
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = env('SECRET_KEY', '')
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases

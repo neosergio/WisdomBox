@@ -9,6 +9,9 @@ from .base import *  # noqa: F403
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '_cybf+c!g@4g=^t(01ag_(99^m0nq8pev9nqb_zvz=ju*dc8$i'
+
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
