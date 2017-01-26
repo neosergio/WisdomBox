@@ -5,7 +5,7 @@ DJANGO_SETTINGS_MODULE=wisdom.settings.production
 """
 
 import dj_database_url
-from .base import *
+from .base import *  # noqa: F403
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -15,7 +15,7 @@ DEBUG = True
 # Update database configuration with $DATABASE_URL.
 
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+DATABASES['default'].update(db_from_env)  # noqa: F405
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

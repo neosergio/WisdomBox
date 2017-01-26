@@ -11,3 +11,4 @@ pep8==1.7.0
 Pillow==4.0.0   # Requirements: OSX:libjpeg, Ubuntu14.04:libjpeg-dev, python-dev
 pycodestyle==2.2.0
 pyflakes==1.3.0
+whitenoise==3.2
