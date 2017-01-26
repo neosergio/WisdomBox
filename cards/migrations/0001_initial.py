@@ -30,8 +30,10 @@ class Migration(migrations.Migration):
                 ('creation_datetime', models.DateTimeField(auto_now_add=True)),
                 ('update_datetime', models.DateTimeField(auto_now=True)),
                 ('is_active', models.BooleanField(default=True)),
-                ('created_by', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='card_created_by', to=settings.AUTH_USER_MODEL)),
-                ('updated_by', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='card_updated_by', to=settings.AUTH_USER_MODEL)),
+                ('created_by', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE,
+                                                 related_name='card_created_by', to=settings.AUTH_USER_MODEL)),
+                ('updated_by', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE,
+                                                 related_name='card_updated_by', to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]
