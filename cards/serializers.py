@@ -12,6 +12,7 @@ class UserSimpleSerializer(serializers.ModelSerializer):
 class CardSerializer(serializers.ModelSerializer):
 
     created_by = UserSimpleSerializer()
+    updated_by = UserSimpleSerializer()
 
     class Meta(object):
         model = Card
