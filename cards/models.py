@@ -15,8 +15,8 @@ def card_image_filename(instance):
 class Card(models.Model):
     title = models.CharField(max_length=140, unique=True)
     is_title_visible = models.BooleanField(default=True)
-    text = models.TextField()
-    secondary_text = models.TextField(null=True, blank=True)
+    text = models.CharField(max_length=200)
+    secondary_text = models.CharField(max_length=200, null=True, blank=True)
     author = models.CharField(max_length=100, null=True, blank=True)
     image = models.ImageField(upload_to=card_image_filename, null=True, blank=True)
     creation_datetime = models.DateTimeField(auto_now_add=True)
