@@ -36,6 +36,25 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
 
+# Apps
+PRODUCTION_APPS = [
+    'storages',
+]
+
+INSTALLED_APPS += PRODUCTION_APPS  # noqa: F405
+
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# AWS
+AWS_STORAGE_BUCKET_NAME = env('AWS_STORAGE_BUCKET_NAME', '')
+AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID', '')
+AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY', '')
+AWS_QUERYSTRING_AUTH = False
+
+# MEDIA
+MEDIAFILES_LOCATION = 'media'
+MEDIA_URL = 'https://wisdombox.s3.amazonaws.com/media/'
+DEFAULT_FILE_STORAGE = 'utils.custom_storages.MediaStorage'
