@@ -6,7 +6,7 @@ from django.utils.encoding import python_2_unicode_compatible
 from time import time
 
 
-def card_image_filename(instance):
+def card_image_filename(instance, filename):
     timestamp = int(time())
     return 'cards/%s%d.jpg' % (instance, timestamp)
 
